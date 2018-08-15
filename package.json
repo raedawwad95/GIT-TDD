@@ -1,0 +1,33 @@
+{
+  "name": "Catslist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma test",
+    "start": "nodemon server/index.js"
+  },
+  "author": "RBK",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.10",
+    "angular-mocks": "^1.7.3",
+    "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "karma": "^3.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-mocha": "^1.3.0",
+    "karma-ng-html2js-preprocessor": "^1.0.0",
+    "mocha": "^5.2.0",
+    "mongodb": "^3.0.7",
+    "mongoose": "^5.0.15",
+    "nodemon": "^1.17.3",
+    "path": "^0.12.7",
+    "router": "^1.3.2",
+    "sinon": "^6.1.4",
+    "sinon-mongoose": "^2.2.1"
+  }
+}
