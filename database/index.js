@@ -10,7 +10,7 @@ db.once('open' , function () {
 
 
 let catSchema = mongoose.Schema({
-  
+
   catName:String,
   ownerEmail:String,
   imageUrl:String,
@@ -20,9 +20,16 @@ let catSchema = mongoose.Schema({
 let Cat = mongoose.model('Cat', catSchema);
 
 let save = (data,callback) => {
-  // TODO: Your code here
-  
-  
+  var cat=new Cat(data);
+	cat.save(function(err,data){
+		if(err){
+			console.log(err);
+			callback(err);
+		}else{
+			console.log(data);
+			callback(null,data);
+		}
+	});
 }
 
 module.exports.save = save;
